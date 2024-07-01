@@ -1478,7 +1478,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/lib/libnetmgrportutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgrportutils.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib/libnetmgrxfrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgrxfrmutils.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnlnetmgr.so \
-    vendor/xiaomi/garnet/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib/libops.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libos.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib/libpal_net_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpal_net_if.so \
@@ -2489,7 +2488,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libnetmgrportutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgrportutils.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libnetmgrxfrmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgrxfrmutils.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
-    vendor/xiaomi/garnet/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libomp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libomp.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libopencv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopencv.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libopencv3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopencv3a.so \
