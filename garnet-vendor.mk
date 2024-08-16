@@ -42,6 +42,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/xiaomi/garnet/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/xiaomi/garnet/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
+    vendor/xiaomi/garnet/proprietary/system/lib/libdolbyottcontrol.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdolbyottcontrol.so \
+    vendor/xiaomi/garnet/proprietary/system/lib/libdovi_omx.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdovi_omx.so \
     vendor/xiaomi/garnet/proprietary/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so \
     vendor/xiaomi/garnet/proprietary/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so \
     vendor/xiaomi/garnet/proprietary/system_ext/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpdecoder.so \
@@ -78,6 +80,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/system_ext/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtextutils.so \
     vendor/xiaomi/garnet/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
     vendor/xiaomi/garnet/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
+    vendor/xiaomi/garnet/proprietary/system/lib64/libdolbyottcontrol.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdolbyottcontrol.so \
+    vendor/xiaomi/garnet/proprietary/system/lib64/libdovi_omx.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdovi_omx.so \
     vendor/xiaomi/garnet/proprietary/system_ext/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimscamera_jni.so \
     vendor/xiaomi/garnet/proprietary/system_ext/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia_jni.so \
     vendor/xiaomi/garnet/proprietary/system_ext/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmosal.so \
@@ -145,6 +149,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
     vendor/xiaomi/garnet/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-service-qti \
     vendor/xiaomi/garnet/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
+    vendor/xiaomi/garnet/proprietary/vendor/bin/hw/dolbycodec2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/dolbycodec2 \
     vendor/xiaomi/garnet/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
     vendor/xiaomi/garnet/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/xiaomi/garnet/proprietary/vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.nxp.hardware.nfc@2.0-service \
@@ -719,6 +724,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/etc/display/qdcm_calib_data_xiaomi_41_02_0c_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_xiaomi_41_02_0c_video_mode_dsc_dsi_panel.json \
     vendor/xiaomi/garnet/proprietary/vendor/etc/display/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.json \
     vendor/xiaomi/garnet/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
     vendor/xiaomi/garnet/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/xiaomi/garnet/proprietary/vendor/etc/ftm_test_config_parrot-qrd-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_parrot-qrd-snd-card \
     vendor/xiaomi/garnet/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
@@ -772,6 +778,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
@@ -1811,6 +1818,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/lib/vendor.xiaomi.hardware.tidaservice@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.tidaservice@1.2.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0-impl.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
+    vendor/xiaomi/garnet/proprietary/vendor/lib64/c2.dolby.avc.dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/c2.dolby.avc.dec.so \
+    vendor/xiaomi/garnet/proprietary/vendor/lib64/c2.dolby.avc.sec.dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/c2.dolby.avc.sec.dec.so \
+    vendor/xiaomi/garnet/proprietary/vendor/lib64/c2.dolby.client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/c2.dolby.client.so \
+    vendor/xiaomi/garnet/proprietary/vendor/lib64/c2.dolby.egl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/c2.dolby.egl.so \
+    vendor/xiaomi/garnet/proprietary/vendor/lib64/c2.dolby.hevc.dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/c2.dolby.hevc.dec.so \
+    vendor/xiaomi/garnet/proprietary/vendor/lib64/c2.dolby.hevc.enc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/c2.dolby.hevc.enc.so \
+    vendor/xiaomi/garnet/proprietary/vendor/lib64/c2.dolby.hevc.sec.dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/c2.dolby.hevc.sec.dec.so \
+    vendor/xiaomi/garnet/proprietary/vendor/lib64/c2.dolby.store.so:$(TARGET_COPY_OUT_VENDOR)/lib64/c2.dolby.store.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/camera/com.qti.actuator.garnet_aac_ov64b40_dw9800v_wide_i_actuator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.actuator.garnet_aac_ov64b40_dw9800v_wide_i_actuator.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/camera/com.qti.actuator.garnet_ofilm_s5khp3_gt9764ber_wide_ii_actuator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.actuator.garnet_ofilm_s5khp3_gt9764ber_wide_ii_actuator.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/camera/com.qti.actuator.garnet_sunny_s5khp3_gt9764ber_wide_i_actuator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.actuator.garnet_sunny_s5khp3_gt9764ber_wide_i_actuator.so \
@@ -2268,6 +2283,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
+    vendor/xiaomi/garnet/proprietary/vendor/lib64/libdolbyottcameracontrol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdolbyottcameracontrol.so \
+    vendor/xiaomi/garnet/proprietary/vendor/lib64/libdolbyvision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdolbyvision.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libdpps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpps.so \
     vendor/xiaomi/garnet/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
