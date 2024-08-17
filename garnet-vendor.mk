@@ -2897,4 +2897,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.ims \
     vendor.qti.hardware.servicetracker@1.2-service \
     vendor.qti.memory.pasrmanager@1.0-service \
-    vendor.xiaomi.hardware.quickcamera@1.0-service
+    vendor.xiaomi.hardware.quickcamera@1.0-service \
+    libsecureui \
+    libsecureui_svcsock
